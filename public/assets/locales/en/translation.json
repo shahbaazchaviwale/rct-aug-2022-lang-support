@@ -1,0 +1,4 @@
+{
+    "welcome_to_react": "Welcome to react and react-i18next",
+    "days_since_release": "its been {{number_of_days}} days since this video was released"
+}
