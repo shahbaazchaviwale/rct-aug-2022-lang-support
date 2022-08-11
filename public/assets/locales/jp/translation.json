@@ -1,5 +1,13 @@
 {
-    "welcome_to_react": "反応と i18Next へようこそ",
-    "days_since_release": "それはありました {{number_of_days}} この動画が公開されてからの日数"
-
+  "welcome_to_react": "反応と i18Next へようこそ",
+  "days_since_release": "それはありました {{number_of_days}} この動画が公開されてからの日数",
+  "top_nav": {
+    "home": "家",
+    "link": "リンク"
+  },
+  "local_search": {
+    "title": "ローカル検索",
+    "search_country": "国を検索",
+    "country_item_not_found": "国が見つかりません"
+  }
 }

@@ -1,4 +1,18 @@
 {
-    "welcome_to_react": "Welcome to react and react-i18next",
-    "days_since_release": "its been {{number_of_days}} days since this video was released"
+  "welcome_to_react": "Welcome to react and react-i18next",
+  "days_since_release": "its been {{number_of_days}} days since this video was released",
+  "top_nav": {
+    "home": "Home",
+    "link": "Link"
+  },
+  "local_search": {
+    "title": "Local Search",
+    "search_country": "Search Country",
+    "country_item_not_found": "No item found"
+  },
+  "pre_loaded_api_search": {
+    "title": "Pre loaded api search",
+    "search_item": "Search your item",
+    "country_item_not_found": "No item found"
+  }
 }
