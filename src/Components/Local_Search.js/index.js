@@ -2,17 +2,17 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-// import { ArrowClockwise, Search } from "react-bootstrap-icons";
 
 import CountryList from "./country_list";
 import { useTranslation } from "react-i18next";
 import { countryList } from "../../Services/country-list";
-import "./localSearch.css"
+import "./localSearch.css";
 const LocalSearch = () => {
   const { t } = useTranslation();
 
   const [query, setQuery] = useState("");
 
+  // ! filter data
   const filterCountry = (query, countries) => {
     if (!query) {
       return countries;
@@ -22,23 +22,26 @@ const LocalSearch = () => {
       country.counrtyName.toLowerCase().includes(query.toLowerCase())
     );
   };
-
+  // !firter data & set to countryArray
   const countryArray = filterCountry(query, countryList);
 
   return (
     <Card>
       <Card.Body className="local_search_card">
-        <Card.Title>{t("local_search.title")} <span style={{fontSize: "12px"}}>Items: {countryArray.length}</span></Card.Title>
-       
+        <Card.Title>
+          {t("local_search.title")}{" "}
+          <span style={{ fontSize: "12px" }}>Items: {countryArray.length}</span>
+        </Card.Title>
+
         <InputGroup className="mb-3">
           <Form.Control
             placeholder={t("local_search.search_country")}
-            aria-label="Recipient's username"
             aria-describedby="basic-addon2"
             onChange={(e) => {
               setQuery(e.target.value);
             }}
           />
+          
         </InputGroup>
 
         {countryArray.length > 0 ? (
